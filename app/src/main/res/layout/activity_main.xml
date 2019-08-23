@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/senderFragment"
+        android:layout_weight="1"
+        android:name="com.oneoclick.myfragmentcommunicate.SenderFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Sender"
+        tools:layout="@layout/fragment_sender"/>
+
+    <fragment
+        android:id="@+id/receiverFragment"
+        android:layout_weight="1"
+        android:name="com.oneoclick.myfragmentcommunicate.ReceiverFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Receiver"
+        tools:layout="@layout/fragment_receiver"/>
+
+
+</LinearLayout>
